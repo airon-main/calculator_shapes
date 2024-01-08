@@ -37,7 +37,6 @@ class MyHomePage extends GetView<HomePageController> {
                 return const SizedBox(height: 15);
               },
             ),
-            Text(controller.testString.value.toString()),
           ],
         ),
       ),
@@ -54,7 +53,7 @@ class ShapeCardTest extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Get.to(() => Detail(dataIndexParam: index));
-        
+
         // Navigator.push(
         //   context,
         //   MaterialPageRoute(builder: (context) => Detail(dataIndex: index)),
